@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ebebeb;
+}
+.loginForm{
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 500px;
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    box-shadow: 1px 1px 10px 1px #246015;
+}
+.formHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formHeader h1{
+    font-weight: 800;
+    color: #042b0e;
+    font-size: 5vh;
+}
+.formHeader p{
+   font-size: 13px;
+   letter-spacing: 0.7px;
+   text-transform: uppercase;
+   margin-top: 10px;
+   color: #535353;
+}
+.inputWrapper{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.inputWrapper input{
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #ebebeb;
+}
+.inputWrapper label{
+   color: #2c2c2c;
+   font-size:2vh;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 4px;
+}
+.error{
+    color: tomato;
+    margin: 5px 0;
+    font-weight: 500;
+}
+.link{
+    text-decoration: none;
+}
+ button{
+    border: none;
+    padding:15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color:#246015;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 2.5vh;
+    font-weight: 600;
+    transition: transform 0.5s ease;
+}
+button:hover{
+   transform: scale(1.05);
+}
+
+@media screen and (max-width:560px){
+      .loginForm{
+        width:400px;
+      }
+}
+
+@media screen and (max-width:448px){
+      .loginForm{
+        width:300px;
+      }
+}

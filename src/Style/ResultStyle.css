@@ -1,0 +1,202 @@
+.result-container {
+    direction: rtl;
+    border: 2px solid #082f10;
+    padding: 24px 30px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 100%;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.3);
+}
+
+.restart-btn {
+    color: white;
+}
+
+.sending-message {
+    background: #cce5ff;
+    color: #004085;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.loading-spinner {
+    font-size: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.advice-section {
+    background: #fef9e6;
+    border-right: 4px solid #ffd700;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.advice-text {
+    color: #856404;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .result-container {
+        width: 90%;
+        padding: 20px 25px;
+        margin: 20px auto;
+    }
+    .result-header h1 {
+        font-size: 24px;
+    }
+    .field-name {
+        font-size: 28px;
+    }
+    .field-description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .result-container {
+        width: 95%;
+        padding: 18px 20px;
+    }
+    .result-header h1 {
+        font-size: 22px;
+    }
+    .field-name {
+        font-size: 24px;
+    }
+    .skills-list {
+        gap: 8px;
+    }
+    .skill-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .send-email-btn, .restart-btn {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 0;
+        margin: 0;
+        height: auto;
+        min-height: 100vh;
+        align-items: flex-start;
+    }
+    .result-container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+        margin: 0;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+    }
+    .result-card {
+        padding: 0;
+    }
+    .result-header h1 {
+        font-size: 20px;
+    }
+    .result-icon {
+        font-size: 40px;
+    }
+    .user-info p {
+        font-size: 16px;
+    }
+    .field-result h2 {
+        font-size: 18px;
+    }
+    .field-name {
+        font-size: 20px;
+        padding: 8px;
+    }
+    .field-description {
+        font-size: 14px;
+    }
+    .skills-section h3 {
+        font-size: 16px;
+    }
+    .skills-list {
+        gap: 6px;
+    }
+    .skill-tag {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    .advice-section {
+        padding: 10px;
+        margin: 15px 0;
+    }
+    .advice-text {
+        font-size: 13px;
+    }
+    .send-email-btn, .restart-btn {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+    .sending-message, .error-message, .success-message {
+        font-size: 13px;
+        padding: 10px;
+    }
+    .loading {
+        font-size: 16px;
+        padding: 20px;
+        text-align: center;
+    }
+    .loading-spinner {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .result-container {
+        padding: 12px;
+    }
+    .field-name {
+        font-size: 18px;
+    }
+    .skill-tag {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    .send-email-btn, .restart-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

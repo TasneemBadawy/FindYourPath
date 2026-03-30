@@ -1,0 +1,129 @@
+/* src/index.css */
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../assets/background.jpg);
+    
+}
+.main{
+   display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    
+    width:90%;
+    margin: auto;
+    width: 80vh;
+    height: 45vh;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+}
+.container h1{
+    color:#08211d;
+    font-size: 9vh;
+    font-weight: 600;
+}
+.container h3 {
+    margin: 0.5% 0 0 2%;
+    font-size: 4vh;
+    color: rgb(4, 55, 4);
+}
+.typewriter h3{
+    display: inline-block;
+    width: max-content;
+    border-right: 5px solid #08211d;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(21) forwards infinite,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width:21ch;}
+}
+.info p{
+  font-weight: 500;
+  text-wrap: balance;
+  margin: 1% 0 0 2%;
+  font-size: 3vh;
+
+}
+a{
+    text-decoration: none;
+}
+.container button{
+    background-color: #246015;
+    margin:  auto;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 600;
+    border: none;
+    width:25vh;
+    height: 6vh;
+    border-radius: 1.5rem;
+    margin: 5% 0 0 30%;
+    transition: transform 0.5s ease;
+
+}
+.container button:hover{
+   transform: scale(1.1);
+}
+.logo{
+    position: absolute;
+    left:-2%;
+    top:-5%;
+}
+.logo img{
+    height: 30vh;
+}
+
+@media screen and (max-width:400px){
+   .container{
+    width: 300px;
+   }
+
+   .container h1{
+      font-size: 7vh;
+   }
+
+   .container h1{
+      font-size: 3vh;
+   }
+
+    .info p{
+  font-size: 2vh;
+   }
+}
+@media screen and (max-width:400px){
+   .container{
+    width: 300px;
+   }
+
+   .container h1{
+      font-size: 7vh;
+   }
+
+   .container h1{
+      font-size: 3vh;
+   }
+
+    .info p{
+  font-size: 2vh;
+   }
+}
